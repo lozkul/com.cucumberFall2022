@@ -23,6 +23,29 @@ public class AmazonStepDefinitions {
         String expectedkelime="Nutella";
         Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
     }
+    @Then("Arama cubuguna Java yazip aratir")
+    public void arama_cubuguna_java_yazip_aratir() {
+        amazonPage.aramaKutusu.sendKeys("Java" + Keys.ENTER);
+    }
+    @Then("Arama sonuclarinin Java icerdigini test eder")
+    public void arama_sonuclarinin_java_icerdigini_test_eder() {
+        String actualAramaSonucu=amazonPage.aramaSonucElementi.getText();
+        String expectedkelime="Java";
+        Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
+    }
+    @Then("Arama cubuguna Apple yazip aratir")
+    public void arama_cubuguna_apple_yazip_aratir() {
+        amazonPage.aramaKutusu.sendKeys("Apple" + Keys.ENTER);
+    }
+    @Then("Arama sonuclarinin Apple icerdigini test eder")
+    public void arama_sonuclarinin_apple_icerdigini_test_eder() {
+        String actualAramaSonucu=amazonPage.aramaSonucElementi.getText();
+        String expectedkelime="Apple";
+        Assert.assertTrue(actualAramaSonucu.contains(expectedkelime));
+    }
+
+
+
     @Then("Sayfayi kapatir")
     public void sayfayi_kapatir() {
         Driver.closeDriver();
