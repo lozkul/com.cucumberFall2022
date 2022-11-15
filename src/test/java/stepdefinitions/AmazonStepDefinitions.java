@@ -12,6 +12,7 @@ public class AmazonStepDefinitions {
     AmazonPage amazonPage=new AmazonPage();
     @Given("Kullanici amazon anasayfaya gider")
     public void kullanici_amazon_anasayfaya_gider() {
+
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
     }
     @When("Arama cubuguna Nutella yazip aratir")
