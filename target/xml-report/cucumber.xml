@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.695">
-    <testcase classname="US1008 Herokuapp Wait Testleri" name="TC16 Kullanici wait islemlerinin calstigini test eder" time="0.233">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given Kullanici "herokuUrl" anasayfaya gider................................passed
-Then Herokuapp Add Element butonuna basar...................................undefined
-And Herokuapp Delete butonu görünmesini bekler..............................skipped
-And Herokuapp Delete butonunun görünür olduğunu test eder...................skipped
-Then Herokuapp Delete butonuna basarak butonu siler.........................skipped
-And Herokuapp Delete butonunun gorunmedigini test eder......................skipped
-Then Sayfayi kapatir........................................................skipped
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="119.944">
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri amazonda aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli" time="38.601">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "Nutella" yazip aratir..................................passed
+And Arama sonuclarinin "Nutella" icerdigini test eder.......................passed
+Then Sayfayi kapatir........................................................passed
 ]]>
-        </failure>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri amazonda aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 2" time="21.684">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "Java" yazip aratir.....................................passed
+And Arama sonuclarinin "Java" icerdigini test eder..........................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri amazonda aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 3" time="18.211">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "Apple" yazip aratir....................................passed
+And Arama sonuclarinin "Apple" icerdigini test eder.........................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri amazonda aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 4" time="21.183">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "SAmsung" yazip aratir..................................passed
+And Arama sonuclarinin "SAmsung" icerdigini test eder.......................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1009 Kullanici liste olarak verilen urunleri amazonda aratir" name="TC17 Kullanici liste olarak arama testi yapabilmeli 5" time="18.797">
+        <system-out>
+            <![CDATA[Given Kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama cubuguna "LG" yazip aratir.......................................passed
+And Arama sonuclarinin "LG" icerdigini test eder............................passed
+Then Sayfayi kapatir........................................................passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>
