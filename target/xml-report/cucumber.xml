@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="80.184">
-    <testcase classname="US1004 Parametre Kullanma" name="TC08 kullanici parametre ile verilen kelimeyi amazonda aratabilmeli" time="79.018">
-        <system-out>
-            <![CDATA[Given Kullanici amazon anasayfaya gider.....................................passed
-Then Arama cubuguna "Nutella" yazip aratir..................................passed
-And Arama sonuclarinin "Nutella" icerdigini test eder.......................passed
-And Sayfayi kapatir.........................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="2.695">
+    <testcase classname="US1008 Herokuapp Wait Testleri" name="TC16 Kullanici wait islemlerinin calstigini test eder" time="0.233">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
+            <![CDATA[Given Kullanici "herokuUrl" anasayfaya gider................................passed
+Then Herokuapp Add Element butonuna basar...................................undefined
+And Herokuapp Delete butonu görünmesini bekler..............................skipped
+And Herokuapp Delete butonunun görünür olduğunu test eder...................skipped
+Then Herokuapp Delete butonuna basarak butonu siler.........................skipped
+And Herokuapp Delete butonunun gorunmedigini test eder......................skipped
+Then Sayfayi kapatir........................................................skipped
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
