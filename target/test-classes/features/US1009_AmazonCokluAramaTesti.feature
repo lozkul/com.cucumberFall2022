@@ -1,4 +1,4 @@
-@wip
+
   Feature: US1009 Kullanici liste olarak verilen urunleri amazonda aratir
 
     Scenario Outline: TC17 Kullanici liste olarak arama testi yapabilmeli
