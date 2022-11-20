@@ -4,6 +4,6 @@
 @db
     Scenario: JDBC01 kullanici databasede sorgu yapabilmeli
 
-      Given Kullanici JDBC ile databaseebaglanir
-      Then users tablosundaki isim verilerini alir
+      Given Kullanici JDBC ile database baglanir
+      Then users tablosundaki first_name verilerini alir
       And isim verilerini test eder
