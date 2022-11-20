@@ -1,4 +1,4 @@
-@wip
+
   Feature: US1011 Automation Practice Kullanici olusturma testi
 
     Scenario: TC18 Kullanici yeni kullanici olusturabilmeli
@@ -13,3 +13,4 @@
       And user kisisel bilgilerini ve iletisim bilgilerini girer
       And user create account butonuna basar
       Then hesap olustugunu dogrulayin
+      Then Sayfayi kapatir
