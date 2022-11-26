@@ -98,4 +98,26 @@ public class UsersStepDefinitions {
             siraNo++;
         }
     }
+
+    @Then("id'si {int} olan userin {string} degerinin {string} oldugunu test eder")
+    public void idSiOlanUserinDegerininOldugunuTestEder(int id, String last_name, String verilenDeger) throws SQLException {
+
+        String query="SELECT " + last_name + " FROM users WHERE id=" +id;
+        resultSet=statement.executeQuery(query);
+        resultSet.first();
+        String actualSoyIsim=resultSet.getString("last_name");
+        System.out.println(actualSoyIsim);
+        Assert.assertEquals(actualSoyIsim, verilenDeger);
+    }
+
+    @Then("id degeri {int} olan kisinin {string} degerini {string} yapar")
+    public void idDegeriOlanKisininDegeriniYapar(int id, String last_name, String istenenDeger) {
+        String query="UPDATE users SET "+last_name+"='Happiness' WHERE id="+istenenDeger;
+        try {
+            statement.executeQuery(query);
+        } catch (SQLException e) {
+            System.out.println("sorgu sonuç döndürmüyor");
+        }
+
+    }
 }
