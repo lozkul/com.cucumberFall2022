@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.34"/>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="38.37">
+    <testcase classname="grid test Edge" name="Edge Test" time="20.255">
+        <system-out>
+            <![CDATA[Given get URL edge..........................................................passed
+Then verify title edge......................................................passed
+And verify currentURL edge..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Grid test Chrome" name="Chrome Test" time="17.9">
+        <system-out>
+            <![CDATA[Given get URL...............................................................passed
+Then verify title...........................................................passed
+And verify currentURL.......................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
